@@ -1,0 +1,10 @@
+//Нужно написать функцию, которая возвращает тип входного аргумента
+function return_type(x) {
+ 
+   return typeof(x)
+
+}
+
+g = 12;
+
+console.log(g,'is',return_type(g))

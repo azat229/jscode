@@ -1,0 +1,15 @@
+//Реализовать функцию convertArrToObj, которая на вход принимает
+//массив значений, а на выход отдает объект, где ключ - это индекс элемента в
+//массиве, а значение - сам элемент
+
+function convertArrtoObj(arr){
+
+    obj = Object.assign({}, arr);
+
+    return obj
+
+}
+
+x = [1, null, 'test', undefined];
+
+alert(convertArrtoObj(x));

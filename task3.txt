@@ -1,0 +1,20 @@
+//Задание: Нужно реализовать функцию, возвращающая сумму всех аргументов,
+//если тип аргумента - число. Вызовов ВСЕГДА 5
+function count(num) {
+    if (typeof num !== 'number') {
+    return count;
+    }
+    let summ = num;
+    function count2(nextnum) {
+        if (typeof nextnum === 'number') {
+            summ += nextnum;
+        }
+        return count2;
+    }
+    count2.toString = function () {
+        return summ;
+    };
+    return count2;
+}
+
+console.log(+count(1)(2)('asd')(null))
